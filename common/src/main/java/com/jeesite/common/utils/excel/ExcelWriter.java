@@ -27,6 +27,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
  * 使用这种方法 写入.xlsx文件，不需要太大的内存
  * @version 2014-9-2
  */
+@SuppressWarnings("deprecation")
 public abstract class ExcelWriter {
 
 	private SpreadsheetWriter sw;

@@ -22,7 +22,7 @@ server:
 
   port: 8980
   servlet:
-    context-path: /js
+    context-path: /
   tomcat:
     uri-encoding: UTF-8
     
@@ -40,8 +40,8 @@ jdbc:
   type: mysql
   driver: com.mysql.cj.jdbc.Driver
   url: jdbc:mysql://127.0.0.1:3306/jeesite?useSSL=false&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=Asia/Shanghai
-  username: root
-  password: 123456
+  username: jeesite
+  password: jeesite
   testSql: SELECT 1
 
 #  # Oracle 数据库配置
@@ -162,8 +162,8 @@ jdbc:
 #  # 事务超时时间，单位秒（30分钟）（v4.1.5+）
 #  transactionTimeout: 1800
 
-#  # 表名前缀
-#  tablePrefix: js_
+  # 表名前缀
+  tablePrefix: ods_
 
 #======================================#
 #========== Spring settings ===========#
@@ -214,10 +214,10 @@ logging:
 #======================================#
 
 # 管理基础路径
-#adminPath: /a
+adminPath: /admin
 
 # 前端基础路径
-#frontPath: /f
+frontPath: /views
 
 # 分页相关
 #page:

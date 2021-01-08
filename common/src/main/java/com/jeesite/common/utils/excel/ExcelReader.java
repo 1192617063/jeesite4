@@ -28,6 +28,7 @@ import org.xml.sax.helpers.XMLReaderFactory;
  * xml，需要继承DefaultHandler，在遇到文件内容时，事件会触发，这种做法可以大大降低 内存的耗费，特别使用于大数据量的文件。
  * @version 2014-9-2
  */
+@SuppressWarnings("deprecation")
 public abstract class ExcelReader extends DefaultHandler {
 
 	// 共享字符串表
